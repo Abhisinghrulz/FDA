@@ -1,4 +1,4 @@
-package com.fda.restaurant.Restaurant.exception;
+package com.fda.restaurant.restaurant.exception;
 
 import java.util.Date;
 

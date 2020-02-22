@@ -1,4 +1,4 @@
-package com.fda.restaurant.Restaurant;
+package com.fda.restaurant.restaurant;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

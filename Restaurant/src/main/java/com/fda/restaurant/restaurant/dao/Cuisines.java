@@ -1,4 +1,4 @@
-package com.fda.restaurant.Restaurant.dao;
+package com.fda.restaurant.restaurant.dao;
 
 import lombok.Getter;
 

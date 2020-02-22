@@ -1,6 +1,6 @@
-package com.fda.restaurant.Restaurant.repository;
+package com.fda.restaurant.restaurant.repository;
 
-import com.fda.restaurant.Restaurant.dao.Restaurant;
+import com.fda.restaurant.restaurant.dao.Restaurant;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

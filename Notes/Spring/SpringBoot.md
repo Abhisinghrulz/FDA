@@ -11,20 +11,19 @@ Inversion of Control is a principle in software engineering by which the control
 ![DependencyInjection](./pictures/DI/DI4.PNG)
 ![DependencyInjection](./pictures/DI/DI5.PNG)
 
-
 <b>@PostConstruct</b> -> Spring calls methods annotated with @PostConstruct only once, just after the initialization of bean properties. Keep in mind that these methods will run even if there is nothing to initialize.
 The method annotated with @PostConstruct can have any access level but it can't be static.
 One example usage of @PostConstruct is populating a database. During development, for instance, we might want to create some default users
 
 <b>@PreDestroy</b> ->A method annotated with @PreDestroy runs only once, just before Spring removes our bean from the application context.
 Same as with @PostConstruct, the methods annotated with @PreDestroy can have any access level but can't be static.
-
+    
 ````java
-package com.fda.restaurant.Restaurant.config;
+package com.fda.restaurant.restaurant.config;
 
-import com.fda.restaurant.Restaurant.dao.Dishes;
-import com.fda.restaurant.Restaurant.dao.Restaurant;
-import com.fda.restaurant.Restaurant.repository.RestaurantRepository;
+import com.fda.restaurant.restaurant.dao.Dishes;
+import com.fda.restaurant.restaurant.dao.Restaurant;
+import com.fda.restaurant.restaurant.repository.RestaurantRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -34,10 +33,10 @@ import org.springframework.context.annotation.Configuration;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-import static com.fda.restaurant.Restaurant.dao.Cuisines.CHINESE;
-import static com.fda.restaurant.Restaurant.dao.Cuisines.INDIAN;
-import static com.fda.restaurant.Restaurant.dao.VegOrNonVeg.NON_VEG;
-import static com.fda.restaurant.Restaurant.dao.VegOrNonVeg.VEG;
+import static com.fda.restaurant.restaurant.dao.Cuisines.CHINESE;
+import static com.fda.restaurant.restaurant.dao.Cuisines.INDIAN;
+import static com.fda.restaurant.restaurant.dao.VegOrNonVeg.NON_VEG;
+import static com.fda.restaurant.restaurant.dao.VegOrNonVeg.VEG;
 
 @Configuration
 @Slf4j
@@ -67,3 +66,4 @@ class LoadDatabase {
     }
 }
 ````
+

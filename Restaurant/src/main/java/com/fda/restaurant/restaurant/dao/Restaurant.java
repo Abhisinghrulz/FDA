@@ -1,4 +1,4 @@
-package com.fda.restaurant.Restaurant.dao;
+package com.fda.restaurant.restaurant.dao;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;

@@ -1,7 +1,7 @@
-package com.fda.restaurant.Restaurant.service;
+package com.fda.restaurant.restaurant.service;
 
-import com.fda.restaurant.Restaurant.dao.Restaurant;
-import com.fda.restaurant.Restaurant.repository.RestaurantRepository;
+import com.fda.restaurant.restaurant.dao.Restaurant;
+import com.fda.restaurant.restaurant.repository.RestaurantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

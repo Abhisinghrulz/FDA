@@ -1,8 +1,8 @@
-package com.fda.restaurant.Restaurant.controller;
+package com.fda.restaurant.restaurant.controller;
 
-import com.fda.restaurant.Restaurant.dao.Restaurant;
-import com.fda.restaurant.Restaurant.exception.ResourceNotFoundException;
-import com.fda.restaurant.Restaurant.service.RestaurantService;
+import com.fda.restaurant.restaurant.dao.Restaurant;
+import com.fda.restaurant.restaurant.exception.ResourceNotFoundException;
+import com.fda.restaurant.restaurant.service.RestaurantService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

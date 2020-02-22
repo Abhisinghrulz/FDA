@@ -1,4 +1,4 @@
-package com.fda.restaurant.Restaurant.exception;
+package com.fda.restaurant.restaurant.exception;
 
 public class ResourceNotFoundException extends Exception
 {
