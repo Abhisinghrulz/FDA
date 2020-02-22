@@ -48,7 +48,6 @@
 
 	<modules>
 		<module>Restaurant</module>
-		<module>External</module>
 	</modules>
 
 </project>
