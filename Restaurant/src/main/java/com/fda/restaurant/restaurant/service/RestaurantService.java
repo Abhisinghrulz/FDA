@@ -2,6 +2,7 @@ package com.fda.restaurant.restaurant.service;
 
 import com.fda.restaurant.restaurant.dao.Restaurant;
 import com.fda.restaurant.restaurant.repository.RestaurantRepository;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,11 +31,7 @@ public class RestaurantService {
     public Restaurant updateRestaurant(Restaurant newRestaurant, String id) {
         return restaurantRepository.findById(id)
                 .map(restaurant -> {
-                    restaurant.setDishes(newRestaurant.getDishes());
-                    restaurant.setCuisines(newRestaurant.getCuisines());
-                    restaurant.setRestaurantName(newRestaurant.getRestaurantName());
-                    restaurant.setVegOrNonVeg(newRestaurant.getVegOrNonVeg());
-                    restaurant.setPriceForTwo(newRestaurant.getPriceForTwo());
+                    BeanUtils.copyProperties(newRestaurant, restaurant, "id");
                     return restaurantRepository.save(restaurant);
                 })
                 .orElseGet(() -> {
