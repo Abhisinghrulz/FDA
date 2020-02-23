@@ -1,0 +1,257 @@
+{
+	"info": {
+		"_postman_id": "593abd66-3244-4b1b-a8b2-6c31ad12dc5e",
+		"name": "FDA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Restaurant",
+			"item": [
+				{
+					"name": "AddRestaurant",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"restaurantName\":\"Punjabi Rasoi\",\n\t\"vegOrNonVeg\":\"VEG\",\n\t\"cuisines\":\"INDIAN\",\n\t\"priceForTwo\":400,\n\t\"dishes\":\n\t{\n\t\t\"dishName\":\"Egg Curry\",\n\t\t\"dishPrice\":250\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9097/restaurant/addRestaurant",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9097",
+							"path": [
+								"restaurant",
+								"addRestaurant"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "AddRestaurant",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"restaurantName\":\"Punjabi Rasoi\",\n\t\"vegOrNonVeg\":\"VEG\",\n\t\"cuisines\":\"INDIAN\",\n\t\"priceForTwo\":400,\n\t\"dishes\":\n\t{\n\t\t\"dishName\":\"Egg Curry\",\n\t\t\"dishPrice\":250\n\t}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9097/restaurant/addRestaurant",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9097",
+									"path": [
+										"restaurant",
+										"addRestaurant"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "32"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Feb 2020 15:51:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Restaurant is successfully added"
+						}
+					]
+				},
+				{
+					"name": "GetRestaurant",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9097/restaurant/getAllRestaurant",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9097",
+							"path": [
+								"restaurant",
+								"getAllRestaurant"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetRestaurant Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetRestaurantById",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"restaurantName\":\"Delhi Swad\",\n\t\"vegOrNonVeg\":\"VEG\",\n\t\"cuisines\":\"INDIAN\",\n\t\"priceForTwo\":600,\n\t\"dishes\":\n\t{\n\t\t\"dishName\":\"Egg Curry\",\n\t\t\"dishPrice\":250\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9097/restaurant/updateRestaurant/5e4985f7f6bd067695a66d6c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9097",
+							"path": [
+								"restaurant",
+								"updateRestaurant",
+								"5e4985f7f6bd067695a66d6c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getRestaurantById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Security",
+			"item": [
+				{
+					"name": "PostJwt",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"username\" : \"tom\",\n   \"password\" : \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ManagementApiAuthorization",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetStudent",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -48,6 +48,7 @@
 
 	<modules>
 		<module>Restaurant</module>
+		<module>FdaSecurity</module>
 	</modules>
 
 </project>
