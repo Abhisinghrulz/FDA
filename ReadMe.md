@@ -32,3 +32,11 @@ spring.data.mongodb.username=root
 spring.data.mongodb.password=root
 
 ````
+
+````
+git clone <repository_url>
+List of all branches
+git branch -a
+checkout the specific branch
+git checkout <name of branch>
+````
