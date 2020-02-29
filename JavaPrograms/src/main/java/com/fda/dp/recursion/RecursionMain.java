@@ -1,4 +1,4 @@
-package com.fda.recursion;
+package com.fda.dp.recursion;
 
 public class RecursionMain {
     public static void main(String[] args) {
