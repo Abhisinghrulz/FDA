@@ -142,6 +142,19 @@ public class Recursion {
         }
     }
 
+    // Print from 1 to num
+    public static void print5(int num)
+    {
+        if(num == 1)
+        {
+            System.out.println(num);
+            return;
+        }
+
+        print5(num-1);
+        System.out.println(num);
+    }
+
     /**
      * Recursive method returns the sum of the positive integers of
      * n+(n-2)+(n-4)... (until n-x =< 0)
