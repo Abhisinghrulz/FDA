@@ -44,6 +44,10 @@ Creational Design Patterns
 ==========================
 
 In plain words
+> This design pattern is all about class instantiation
+>
+> How to effectively create the objects and reuse it and also explains how to control the object creation
+>
 > Creational patterns are focused towards how to instantiate an object or group of related objects.
 
 Wikipedia says
