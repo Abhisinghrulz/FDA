@@ -6,11 +6,9 @@
 
 ![alt text](images/Screenshot_4.png "Screenshot_3")
 
-Dependency injection is the process whereby a framework or such, for example the Spring
-framework, establishes the relationships between different parts of an application. This as opposed
-to the application code itself being responsible of establishing these relationships.
-When using the Spring framework for Java development, some of the advantages of dependency
-injection are:
+> <b>Inversion of Control</b> is a principle in software engineering by which the control of objects or portions of a program is transferred to a container or framework.
+
+When using the Spring framework for Java development, some of the advantages of dependency injection are:
 - Reduced coupling between the parts of an application.
 - Increased cohesion of the parts of an application.
 - Increased testability.
@@ -20,27 +18,9 @@ injection are:
 - Standardizes parts of application development.
 - Reduces boilerplate code.
 
-No code needs to be written to establish relationships in domain classes. Such code or configuration is separated into XML or Java configuration classes.
+Inversion of Control can be achieved through various mechanisms such as: Strategy design pattern, Service Locator pattern, Factory pattern, and Dependency Injection (DI).
 
 # Spring Configuration
-
-#### Interfaces recommended for Spring beans
-
-The following are reasons why it is recommended to define interfaces that are later implemented by
-the classes implement the Spring beans in an application:
-- Increased testability.
-Beans can be replaced with `mock` or `stub` objects that implement the same interface(s) as the
-real bean implementation.
-- Allows for use of the `JDK dynamic proxying` mechanism.
-- Allows for easier switching of Spring bean implementation.
-- Allows for hiding implementation.
-
-For instance, a service implemented in a module only have a public interface while the
-implementation is only visible within the module.
-
-Hiding the implementation also allows the developer to freely refactor code to methods,
-without having to fear that such methods will be visible outside of the module containing the
-implementation.
 
 ## XML Spring Configuration
 
@@ -49,11 +29,11 @@ In order to tell the Spring Container to create these objects and how to link th
 This configuration can be provided using XML files or XML + annotations or Java Configuration classes.
 ```
 
-Martin Fowler came up with the name Dependency Injection, to rename Inversion of Control principle
+><b>Dependency injection(DI)</b> is a software design pattern that implements inversion of control for resolving dependencies.
 
 ### Constructor Injection
 
-Constructor injection can be used to define beans when the bean type is a class that has a constructor with arguments defined.
+Constructor-based DI is when the container invokes a constructor with a number of arguments, each of which represents a dependency or other class.
 
 ```xml
 <beans>

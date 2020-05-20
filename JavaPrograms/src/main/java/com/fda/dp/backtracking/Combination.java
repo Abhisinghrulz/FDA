@@ -16,7 +16,7 @@ public class Combination {
         combination(input,new HashSet<>(),0,k);
     }
 
-    public static void combination(int[] input, HashSet<Integer> set,int start,int k){
+        public static void combination(int[] input, HashSet<Integer> set,int start,int k){
         if(set.size() == k){
             System.out.println(set);
             return;

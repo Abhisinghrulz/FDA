@@ -49,6 +49,7 @@
 	<modules>
 		<module>Restaurant</module>
 		<module>FdaSecurity</module>
-	</modules>
+        <module>kafka</module>
+    </modules>
 
 </project>

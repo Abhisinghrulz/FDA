@@ -38,7 +38,7 @@ public class Recursion {
      *
      * @return The Factorial value of integer (4! = 24)
      */
-    public static int factorial(int k) {
+    private static int factorial(int k) {
         if (k <= 1) {
             return 1;
         } else {
@@ -775,5 +775,9 @@ public class Recursion {
                     + end);
             towerOfHanoi(n - 1, auxillary, start, end);
         }
+    }
+
+    public static void main(String[] args) {
+        System.out.println(factorial(5));
     }
 }
